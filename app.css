@@ -1,85 +1,141 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:'Inter', sans-serif;
-  }
-  
-  /* navbar section styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* navbar section styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1A1A1A;
+  color: white;
+}
+
+.navbar .mobile-logo {
+  display: none;
+}
+
+.navbar .search {
+  border: 1px solid #333;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 35%;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.navbar .search svg {
+  width: 13px;
+  margin-bottom: 3px;
+}
+
+.navbar .search input {
+  background: transparent;
+  border: none;
+  width: 90%;
+  height: 100%;
+  color: white;
+  outline: none;
+}
+
+.navbar .user-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+}
+
+.navbar .user-cont svg {
+  height: 40px;
+  margin-right: 7px;
+  background: #333;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.navbar .username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  border-radius: 10px;
+}
+
+.navbar .username p {
+  padding: 12px;
+}
+
+
+.navbar .username span {
+  margin-left: 10px;
+  background: #2fd05d;
+  color: #135325;
+  border-radius: 10px;
+  padding: 11px;
+}
+
+
+
+
+/* responsive styling */
+
+
+@media screen and (max-width: 430px) {
+
+  /* styling for mobile phone */
   .navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#1A1A1A;
-    color: white;
+    padding: 20px 10px;
   }
 
-  .navbar .mobile-logo{
+  .navbar .mobile-logo {
+    display: flex;
+  }
+
+  .navbar .desktop-logo {
     display: none;
   }
 
-  .navbar .search{
-    border: 1px solid #333;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 35%;
-    background-color: #333;
-    border-radius: 10px;
-  }
-
-  .navbar .search svg{
-    width: 13px;
-    margin-bottom: 3px;
-  }
-
-  .navbar .search input{
-    background: transparent;
-    border: none;
-    width: 90%;
-    height: 100%;
-    color: white;
-    outline: none;
-  }
-
-  .navbar .user-cont{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 5px;
-  }
-
-  .navbar .user-cont svg{
-    height: 40px;
-    margin-right: 7px;
-    background: #333;
-    padding: 7px;
-    border-radius: 10px;
+  .navbar .username p {
+    display: none;
   }
 
   .navbar .username{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #333;
-    border-radius: 10px;
-  }
-  .navbar .username p{
-    padding: 12px;
+    background: transparent;
   }
 
-
+  .navbar .search{
+    width: 60%;
+    padding-left: 6px;
+    margin-left: 15px;
+  }
+  .navbar .search input{
+    margin-left: 5px;
+  }
   .navbar .username span{
-    margin-left: 10px;
-    background: #2fd05d;
-    color: #135325;
-    border-radius: 10px;
-    padding: 11px;
+    padding: 8px;
+    margin-left: 5px;
   }
+  .navbar .user-cont svg {
+    height: 38px;
+    background: transparent;
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar .search{
+    width: 55%;
+    padding-left: 6px;
+  }
+}
