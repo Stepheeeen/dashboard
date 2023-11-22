@@ -103,6 +103,7 @@
   color: white;
   border-radius: 10px;
   position: relative;
+  transition: .3s ease-out;
 }
 
 .main .notice .button {
