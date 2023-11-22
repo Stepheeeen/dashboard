@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Inside Input</title>
+  <style>
+    .input-with-icon {
+      position: relative;
+      display: inline-block;
+    }
+
+    .input-with-icon input {
+      padding-left: 30px; /* Adjust the padding to make room for the icon */
+    }
+
+    .input-with-icon::before {
+      content: url('https://crushingit.tech/hackathon-assets/icon-search.svg'); /* Replace 'path-to-your-icon.png' with the path to your icon image */
+      position: absolute;
+      left: 5px; /* Adjust the left position to place the icon where you want */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="input-with-icon">
+    <input type="text" placeholder="Type something...">
+  </div>
+
+</body>
+</html>

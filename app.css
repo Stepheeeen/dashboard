@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1A1A1A;
+  background-color: #1c181d;
   color: white;
 }
 
@@ -23,29 +23,44 @@
   display: none;
 }
 
-.navbar .search {
+.navbar .search{
   border: 1px solid #333;
   height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   width: 35%;
-  background-color: #333;
+  /* background-color: #322f33; */
   border-radius: 10px;
+  position: relative;
+  display: inline-block;
 }
 
-.navbar .search svg {
+.navbar .search::before{
+  content: url('https://crushingit.tech/hackathon-assets/icon-search.svg');
+      position: absolute;
+      left: 10px; 
+      top: 50%;
+      transform: translateY(-50%);
+}
+
+/* .navbar .search:hover{
+  outline: 1px solid #616161;
+}
+.navbar .search input:focus .navbar .search {
+  outline: 1px solid #656266;
+} */
+
+/* .navbar .search svg {
   width: 13px;
   margin-bottom: 3px;
-}
+} */
 
 .navbar .search input {
   background: transparent;
   border: none;
-  width: 90%;
+  width: 100%;
   height: 100%;
   color: white;
-  outline: none;
+  padding-left: 30px;
+  /* outline: none; */
 }
 
 .navbar .user-cont {
