@@ -85,16 +85,81 @@
   padding: 11px;
 }
 
+/* main styling */
+.main {
+  margin-top: 100px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
 
+.main .notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #1A1A1A;
+  width: 60%;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.main .notice .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .notice .button .desktop-btn,
+.main .notice .mobile-btn {
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #1A1A1A;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.main .notice .mobile-btn{
+  display: none;
+}
+
+.main .notice .button .cancel {
+  background: transparent;
+  border: none;
+  outline: none;
+  display: grid;
+  place-items: center;
+}
 
 
 /* responsive styling */
+@media screen and (max-width: 885px) {
 
+  /* styling for big tablets */
+  .main .notice {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  /* styling for small tabs and mobile phone */
+  .main .notice {
+    width: 100%;
+    border-radius: 0;
+  }
+
+}
 
 @media screen and (max-width: 430px) {
 
   /* styling for mobile phone */
-  .navbar{
+  .navbar {
     padding: 20px 10px;
   }
 
@@ -110,31 +175,57 @@
     display: none;
   }
 
-  .navbar .username{
+  .navbar .username {
     background: transparent;
   }
 
-  .navbar .search{
+  .navbar .search {
     width: 60%;
     padding-left: 6px;
     margin-left: 15px;
   }
-  .navbar .search input{
+
+  .navbar .search input {
     margin-left: 5px;
   }
-  .navbar .username span{
+
+  .navbar .username span {
     padding: 8px;
     margin-left: 5px;
   }
+
   .navbar .user-cont svg {
     height: 38px;
     background: transparent;
     margin-right: 4px;
   }
+
+  .main .notice{
+    padding-left: 10px;
+  }
+
+  .main .notice .mobile-btn{
+    display: block;
+    margin-top: 30px;
+  }
+
+  .main .notice .button .desktop-btn{
+    display: none;
+  }
+  .main .notice .mobile{
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 20px;
+  }
+  .main .notice .button .cancel{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .navbar .search{
+  .navbar .search {
     width: 55%;
     padding-left: 6px;
   }

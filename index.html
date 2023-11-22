@@ -15,7 +15,11 @@
 
   <body>
     <nav class="navbar">
-      <img src="https://crushingit.tech/hackathon-assets/shopify-icon.svg" alt="" class="mobile-logo">
+      <img
+        src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
+        alt=""
+        class="mobile-logo"
+      />
       <img
         src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg"
         class="desktop-logo"
@@ -23,7 +27,12 @@
 
       <div class="search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 14">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.82264 10.3833C7.89957 11.0841 6.74835 11.5 5.5 11.5C2.46243 11.5 0 9.03757 0 6C0 2.96243 2.46243 0.5 5.5 0.5C8.53757 0.5 11 2.96243 11 6C11 7.24835 10.5841 8.39957 9.8833 9.32264L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L8.82264 10.3833ZM9.5 6C9.5 8.20914 7.70914 10 5.5 10C3.29086 10 1.5 8.20914 1.5 6C1.5 3.79086 3.29086 2 5.5 2C7.70914 2 9.5 3.79086 9.5 6Z" fill="#fff"/>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.82264 10.3833C7.89957 11.0841 6.74835 11.5 5.5 11.5C2.46243 11.5 0 9.03757 0 6C0 2.96243 2.46243 0.5 5.5 0.5C8.53757 0.5 11 2.96243 11 6C11 7.24835 10.5841 8.39957 9.8833 9.32264L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L8.82264 10.3833ZM9.5 6C9.5 8.20914 7.70914 10 5.5 10C3.29086 10 1.5 8.20914 1.5 6C1.5 3.79086 3.29086 2 5.5 2C7.70914 2 9.5 3.79086 9.5 6Z"
+            fill="#fff"
+          />
         </svg>
         <input type="text" placeholder="Search" />
       </div>
@@ -45,6 +54,26 @@
         </div>
       </div>
     </nav>
+
+    <main class="main">
+      <div class="notice">
+        <div class="mobile">
+          <p>Extend your trial for $1/month for 3 month on select plans.</p>
+          <button type="button" class="mobile-btn">select plan</button>
+        </div>
+        
+
+        <div class="button">
+          <button type="button" class="desktop-btn">select plan</button>
+          <button type="button" class="cancel">
+            <svg width="30" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.4697 15.0303C14.7626 15.3232 15.2374 15.3232 15.5303 15.0303C15.8232 14.7374 15.8232 14.2626 15.5303 13.9697L11.5607 10L15.5303 6.03033C15.8232 5.73744 15.8232 5.26256 15.5303 4.96967C15.2374 4.67678 14.7626 4.67678 14.4697 4.96967L10.5 8.93934L6.53033 4.96967C6.23744 4.67678 5.76256 4.67678 5.46967 4.96967C5.17678 5.26256 5.17678 5.73744 5.46967 6.03033L9.43934 10L5.46967 13.9697C5.17678 14.2626 5.17678 14.7374 5.46967 15.0303C5.76256 15.3232 6.23744 15.3232 6.53033 15.0303L10.5 11.0607L14.4697 15.0303Z" fill="#fff"/>
+              </svg>
+              
+          </button>
+        </div>
+      </div>
+    </main>
 
     <script src="./app.js"></script>
   </body>
