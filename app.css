@@ -23,35 +23,33 @@
   display: none;
 }
 
-.navbar .search{
-  border: 1px solid #333;
-  height: 35px;
+.navbar .search {
+  border: 1px solid #616161;
+  height: 40px;
   width: 35%;
-  /* background-color: #322f33; */
+  background-color: #1A1A1A;
   border-radius: 10px;
   position: relative;
   display: inline-block;
 }
 
-.navbar .search::before{
+.navbar .search::before {
   content: url('https://crushingit.tech/hackathon-assets/icon-search.svg');
-      position: absolute;
-      left: 10px; 
-      top: 50%;
-      transform: translateY(-50%);
+  position: absolute;
+  left: 15px;
+  top: 52%;
+  transform: translateY(-52%);
 }
 
-/* .navbar .search:hover{
-  outline: 1px solid #616161;
+.navbar .search input:hover {
+  border: 1px solid #616161;
+  border-radius: inherit;
 }
-.navbar .search input:focus .navbar .search {
-  outline: 1px solid #656266;
-} */
 
-/* .navbar .search svg {
-  width: 13px;
-  margin-bottom: 3px;
-} */
+.navbar .search input:focus {
+  border: 1px solid #E3E3E3;
+  border-radius: inherit;
+}
 
 .navbar .search input {
   background: transparent;
@@ -59,45 +57,124 @@
   width: 100%;
   height: 100%;
   color: white;
-  padding-left: 30px;
-  /* outline: none; */
+  padding-left: 35px;
+  outline: none;
 }
 
 .navbar .user-cont {
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 5px;
 }
 
 .navbar .user-cont svg {
   height: 40px;
   margin-right: 7px;
-  background: #333;
+  background: #303030;
   padding: 7px;
   border-radius: 10px;
 }
 
-.navbar .username {
+.username {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #333;
+  background: #303030;
   border-radius: 10px;
+  cursor: pointer;
 }
 
-.navbar .username p {
-  padding: 12px;
+.username p {
+  padding: 10px;
 }
 
-
-.navbar .username span {
+.username span,
+.user{
   margin-left: 10px;
   background: #2fd05d;
   color: #135325;
   border-radius: 10px;
-  padding: 11px;
+  padding: 9px;
+}
+
+.navbar .username:hover,
+.navbar .user-cont svg:hover {
+  background-color: #475467;
+}
+
+.active {
+  background-color: #475467;
+  border-radius: inherit;
+}
+
+.visible{
+  display: none;
+}
+
+/* user dropdown */
+.user-dropdown {
+  position: absolute;
+  right: 10px;
+  top: 90px;
+  width: 20%;
+  z-index: 9;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0 #616161;
+  padding-top: 10px;
+}
+.user{
+  margin-left: 2px;
+}
+.user-dropdown .div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e3e3e3;
+  padding: 5px;
+  border-radius: inherit;
+  font-weight: 500;
+}
+.user-dropdown .div p{
+  margin-left: -48px;
+}
+.user-dropdown .div svg{
+  width: 25px;
+}
+
+.user-dropdown ul li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  border-radius: 5px;
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px;
+  cursor: pointer;
+}
+.user-dropdown ul li:hover{
+  background: #E3E3E3;
+}
+
+.user-dropdown ul li img{
+  width: 30px;
+  margin-left: -6px;
+  margin-bottom: -3px;
+}
+
+.user-dropdown ul .profile{
+  padding:5px 13px;
+}
+
+.user-dropdown ul .profile h3{
+  font-size: 15px;
+}
+.user-dropdown ul .profile p{
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* main styling */
@@ -114,11 +191,12 @@
   align-items: center;
   padding: 20px;
   background: #1A1A1A;
-  width: 60%;
+  width: 55%;
   color: white;
   border-radius: 10px;
   position: relative;
   transition: .3s ease-out;
+  font-size: 14px;
 }
 
 .main .notice .button {
@@ -140,7 +218,7 @@
   font-size: 16px;
 }
 
-.main .notice .mobile-btn{
+.main .notice .mobile-btn {
   display: none;
 }
 
@@ -216,24 +294,26 @@
     margin-right: 4px;
   }
 
-  .main .notice{
+  .main .notice {
     padding-left: 10px;
   }
 
-  .main .notice .mobile-btn{
+  .main .notice .mobile-btn {
     display: block;
     margin-top: 30px;
   }
 
-  .main .notice .button .desktop-btn{
+  .main .notice .button .desktop-btn {
     display: none;
   }
-  .main .notice .mobile{
+
+  .main .notice .mobile {
     flex-direction: column;
     flex-wrap: wrap;
     padding-right: 20px;
   }
-  .main .notice .button .cancel{
+
+  .main .notice .button .cancel {
     position: absolute;
     top: 15px;
     right: 10px;

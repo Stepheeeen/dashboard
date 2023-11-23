@@ -30,7 +30,7 @@
       </div>
 
       <div class="user-cont">
-        <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg">
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -39,13 +39,65 @@
           />
         </svg>
 
-        <div class="username">
+        <div class="username" id="username">
           <p>Davis Collection</p>
 
           <span>DC</span>
         </div>
       </div>
     </nav>
+
+    <div class="alert" id="alert">
+      <div class="header">
+        <h3>Alert</h3>
+
+        <div>
+          <img src="https://crushingit.tech/hackathon-assets/icon-filter.svg" alt="filter">
+
+          <img src="https://crushingit.tech/hackathon-assets/icon-check-empty-circle.svg" alt="read all">
+        </div>
+      </div>
+
+      <div>
+        Alerts about your store and account will show here
+      </div>
+    </div>
+
+    <div class="user-dropdown visible" id="dropdown">
+      <div class="div" id="username">
+        <span class="user">DC</span>
+        <p>Davis Collection</p>
+
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+          <path
+            d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+            fill="#fff"
+          ></path>
+        </svg>
+      </div>
+      <ul>
+        <li>
+          <span>
+            <img src="https://crushingit.tech/hackathon-assets/icon-store.svg" alt="">
+          </span>
+           All Stores
+        </li>
+        <li>Help Center</li>
+        <li>Changelog</li>
+        <li>Community forums</li>
+        <li>Hire a Shopify Partner</li>
+        <li>Keyboard shortcuts</li>
+        <div class="profile">
+          <h3>David Micheal</h3>
+          <p>davidmicheal@gmail.com</p>
+        </div>
+        <li>Manage account</li>
+        <li>Log out</li>
+      </ul>
+      
+
+    </div>
 
     <main class="main">
       <div class="notice" id="notice">
@@ -66,6 +118,8 @@
         </div>
       </div>
     </main>
+
+
 
     <script src="./app.js"></script>
   </body>
