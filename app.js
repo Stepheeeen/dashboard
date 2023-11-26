@@ -29,14 +29,6 @@ username.addEventListener('click', (event) => {
     menu.classList.toggle('visible');
 });
 
-// document.body.addEventListener('click', function () {
-//     menu.classList.remove('visible');
-// });
-
-// menu.addEventListener('click', function (event) {
-//     event.stopPropagation();
-// });
-
 // Setup Guide Block
 
 function updateProgressBar(percentage) {

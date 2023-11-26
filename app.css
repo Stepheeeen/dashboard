@@ -17,7 +17,7 @@
   align-items: center;
   background-color: #1c181d;
   color: white;
-  z-index: 9;
+  z-index: 9999;
 }
 
 .navbar .mobile-logo {
@@ -435,7 +435,10 @@
   box-shadow: 0px 0px 0px 1.5px #333, 0px 3px 0px 0px #000 inset;
 }
 
-
+/* .import{
+  font-size: 14px;
+  font-weight: 500;
+} */
 
 
 /* responsive styling */
@@ -444,10 +447,6 @@
   /* styling for big tablets */
   .main .notice {
     width: 80%;
-  }
-
-  .task_illustration {
-    display: none;
   }
 
   #setup_guide-box {
@@ -479,6 +478,10 @@
 
   #setup_guide-box {
     width: 99%;
+  }
+
+  .task_illustration {
+    display: none;
   }
 
 }
